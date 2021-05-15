@@ -1,0 +1,55 @@
+@import './config.scss';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+  //   Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  user-select: none;  // 画面タップしまくるサイトなので
+}
+
+// スクロールバーあるなしのトランジション見栄えダウンを防ぐ
+html {
+  overflow-y: scroll;
+}
+
+* {
+  box-sizing: border-box;
+  color: $base-f-col;
+
+  font-family: 'Playfair Display', serif;  // セリフ体
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $base-f-col;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  font-size: small;
+  @media (max-width: ($sp)) {
+    font-size: x-small;
+  }
+  @media (min-width: ($pc)) {
+    font-size: large;
+  }
+}
