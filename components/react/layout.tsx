@@ -34,12 +34,12 @@ export default class Layout extends React.Component {
     return (
       <div className="js__pixi__height">
         <Pure/>
-        <Header/>
+        {/* <Header/> */}
         <div ref={this.onReadyTransitionContainer}>
           {this.props.children}
-          <Floating>
+          {/* <Floating>
             <Footer/>
-          </Floating>
+          </Floating> */}
         </div>
       </div>
     )

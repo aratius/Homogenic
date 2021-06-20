@@ -25,10 +25,10 @@ const Home: React.FC<Props> = ({works}) => {
       circlePos={{x: 100, y: 500}}
       title="TOP"
     >
-      <div className={styles.main__container}>
+      {/* <div className={styles.main__container}>
         <_Works data={works} styles={STYLES_WORKS.TOP}/>
         <h5>mail: <a href="mailto: arata1128matsu@icloud.com">arata1129matsu@icloud.com</a></h5>
-      </div>
+      </div> */}
     </Base>
   )
 }
